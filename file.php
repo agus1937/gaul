@@ -1,8 +1,8 @@
- <?php
+  <?php
     if (isset($_POST['shorten'])) {
     	$longurl = $_POST['longurl'];
-    	$login 	= "username"; //pagodapastiles
-    	$appkey = "api-key"; //R_572e9e80040c47e68ea318418b949f30
+    	$login 	= "pagodapastiles"; //username login bit.ly
+    	$appkey = "R_572e9e80040c47e68ea318418b949f30"; //API key
     	$shorturl = make_bitly_url ($longurl, $login, $appkey, 'json');
     	echo "<p><strong>Your long URL is</strong> <span class='url'>$longurl </span></p>";
     	echo "<p><strong>Your short URL is</strong> <span class='url'>$shorturl </span></p>";
@@ -35,3 +35,4 @@
     	}
     }
     ?>
+
